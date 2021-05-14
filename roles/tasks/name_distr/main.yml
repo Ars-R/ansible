@@ -2,5 +2,5 @@
 
 - name: version 
   set_fact:
-      ver: "{{ ansible_distribution }} / {{ ansible_distribution_version}}" 
+   ver: "{{ ansible_distribution }} / {{ ansible_distribution_version}}" 
       
