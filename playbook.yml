@@ -3,7 +3,15 @@
 - hosts: iaas
   user: root
   tasks:
-    - include: roles/tasks/main.yml
+    - include: /home/ars/ops/roles/tasks/create_file/main.yml
+      tags: create_empty_file
+      name: create_empty_file
+   
+- hosts: all
+  user: root
+  tasks:
+    - include: /home/ars/ops/roles/tasks/name_distr/main.yml
+      tags: version
+      name: version
     - debug:
-        msg: '{{ver}}'
-        
+        msg: "{{ver}}"

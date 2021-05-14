@@ -11,7 +11,4 @@
     mode: 0500
     
     
-- name: version 
-  set_fact:
-      ver: "{{ ansible_distribution }} / {{ ansible_distribution_version}}" 
-      
+        
