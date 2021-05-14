@@ -1,0 +1,11 @@
+---        
+
+- hosts: iaas
+  user: root
+  tasks:
+    - include: roles/tasks/main.yml
+    - debug:
+        msg: '{{ver}}'
+        
+        
+
