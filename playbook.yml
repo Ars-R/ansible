@@ -14,4 +14,4 @@
       tags: version
       name: version
     - debug:
-        msg: "{{ver}}"
+        msg: "{{ ver }}"
